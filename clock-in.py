@@ -188,14 +188,14 @@ def main(username, password):
         if str(res['e']) == '0':
             print('已为您打卡成功！')
             data = {
-                "text":'已为您打卡成功！',
+                "text":'已为xjl打卡成功！',
                 "desp":'已为您打卡成功！'
             }
         else:
             print(res['m'])
             if res['m'].find("已经") != -1: # 已经填报过了 不报错
                 data = {
-                    "text":'今天已经填报了！',
+                    "text":'今天xjl已经填报了！',
                     "desp":'今天已经填报了！'
                 }
                 pass
